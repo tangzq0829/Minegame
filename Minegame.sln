@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minegame.Core", "Minegame.Core.csproj", "{2374C327-23C3-A71A-8EB8-3C4857E45465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minegame.Editor", "Minegame.Editor.csproj", "{F82EB9A0-3B3D-5289-4054-15B5BD7D9B7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2374C327-23C3-A71A-8EB8-3C4857E45465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2374C327-23C3-A71A-8EB8-3C4857E45465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2374C327-23C3-A71A-8EB8-3C4857E45465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2374C327-23C3-A71A-8EB8-3C4857E45465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82EB9A0-3B3D-5289-4054-15B5BD7D9B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82EB9A0-3B3D-5289-4054-15B5BD7D9B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82EB9A0-3B3D-5289-4054-15B5BD7D9B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82EB9A0-3B3D-5289-4054-15B5BD7D9B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+{
+    "name": "Minegame.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ac58fcf0912775642b8cdf71de79a054"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
