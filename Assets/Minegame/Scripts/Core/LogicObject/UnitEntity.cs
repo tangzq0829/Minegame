@@ -7,25 +7,26 @@ using UnityEngine;
 
 namespace Minegame.Core
 {
-    public partial class UnitLogic : LogicObject
+    public partial class UnitEntity : LogicObject
     {
         #region VARIABLES
-        private float m_timeSlot;
-
-
-        [HideInInspector]
-        public bool isPlayerControlled;
-
-        [HideInInspector]
-        public UnitData data;
+        private float _timeSlot = 0;
         #endregion
 
         #region PROPERTIES
+        public float TimeSlot
+        {
+            get { return this._timeSlot; }
+            set { this._timeSlot = value; }
+        }
+        public bool IsSelected { get; set; }
+        public int Team { get; set; }
+        public UnitData Data { get; set; }
         public float ActualSpeed
         {
             get
             {
-                return this.data.attributes.speed;
+                return Data.attributes.speed;
             }
         }
 
@@ -33,7 +34,7 @@ namespace Minegame.Core
         {
             get
             {
-                return this.data.attributes.health;
+                return Data.attributes.health;
             }
         }
 
@@ -42,7 +43,7 @@ namespace Minegame.Core
         #region METHODS
         private void Awake()
         {
-            this.m_timeSlot = 0;
+            _timeSlot = 0;
         }
         #endregion
     }

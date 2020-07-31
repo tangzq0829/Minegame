@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{2374C327-23C3-A71A-8EB8-3C4857E45465}</ProjectGuid>
+    <ProjectGuid>{7125EA57-1BA6-7F02-C19D-EFDEA492F24D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Minegame.Core</AssemblyName>
@@ -28,6 +28,7 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -61,20 +62,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Minegame\Scripts\Core\Base\LogicObject.cs" />
-    <Compile Include="Assets\Minegame\Scripts\Core\Base\DataObject.cs" />
+    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitExtension.cs" />
     <Compile Include="Assets\Minegame\Scripts\Core\DataObject\UnitData.cs" />
-    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitLogic.Battle.cs" />
+    <Compile Include="Assets\Minegame\Scripts\Core\Base\DataObject.cs" />
+    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitEntity.Battle.cs" />
     <Compile Include="Assets\Minegame\Scripts\Core\Manager\BattleManager.cs" />
-    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitLogic.cs" />
+    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitEntity.cs" />
     <Compile Include="Assets\Minegame\Scripts\Core\Manager\GameManagers.cs" />
+    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitEntity.Debug.cs" />
     <Compile Include="Assets\Minegame\Scripts\Core\Base\ManagerBase.cs" />
     <Compile Include="Assets\Minegame\Scripts\Core\Manager\FormulaManager.cs" />
-    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitLogic.AI.cs" />
-    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitContainer.cs" />
+    <Compile Include="Assets\Minegame\Scripts\Core\LogicObject\UnitEntity.AI.cs" />
+    <Compile Include="Assets\Minegame\Scripts\Core\Base\BehaviourBase.cs" />
     <Compile Include="Assets\Minegame\Scripts\Core\DataObject\UnitAttributes.cs" />
     <Compile Include="Assets\Minegame\Scripts\Core\Game\Formation.cs" />
     <Compile Include="Assets\Minegame\Scripts\Core\Manager\ManagerOfManagers.cs" />
-    <Compile Include="Assets\Minegame\Scripts\Core\Base\BehaviourBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Minegame\Scripts\Core\Minegame.Core.asmdef" />

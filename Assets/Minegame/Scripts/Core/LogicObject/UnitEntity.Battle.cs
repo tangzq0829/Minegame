@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace Minegame.Core
 {
-    public partial class UnitLogic
+    public partial class UnitEntity
     {
-		public bool AccumulateTimeSlot()
+
+
+		public void AccumulateTimeSlot()
         {
             var formulaMng = GameManagers.Get<FormulaManager>();
-            this.m_timeSlot = formulaMng.AccumulateTimeSlot(this.m_timeSlot, this.ActualSpeed);
-            return formulaMng.IsFullTimeSlot(this.m_timeSlot);
+            this.TimeSlot = formulaMng.AccumulateTimeSlot(this.TimeSlot, this.ActualSpeed);
         }
 
 		public void ReleaseTimeSlot()
         {
             var formulaMng = GameManagers.Get<FormulaManager>();
-            this.m_timeSlot = formulaMng.ReleaseTimeSlot(this.m_timeSlot);
+            this.TimeSlot = formulaMng.ReleaseTimeSlot(this.TimeSlot);
         }
 
 
@@ -27,9 +28,5 @@ namespace Minegame.Core
             return this.ActualHealth > 0;
         }
 
-        public bool IsPlayerControlled()
-        {
-            return this.isPlayerControlled;
-        }
     }
 }

@@ -9,7 +9,6 @@ namespace Minegame.Core
     public class FormulaManager : ManagerBase
     {
         #region TimeSlot
-        public float maxTimeSlot = 100f;
         public float AccumulateTimeSlot(float value, float speed)
         {
             float result = 0f;
@@ -19,17 +18,15 @@ namespace Minegame.Core
 
         public float ReleaseTimeSlot(float value)
         {
-            float result = 0f;
-            result = value - this.maxTimeSlot;
-            if (result < 0) result = 0;
-            return result;
+            return 0f;
         }
 
-        public bool IsFullTimeSlot(float value)
-        {
-            return value > this.maxTimeSlot;
-        }
 
         #endregion
+
+        private void Start()
+        {
+            
+        }
     }
 }

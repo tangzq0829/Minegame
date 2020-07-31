@@ -9,9 +9,11 @@ namespace Minegame.Core
 {
     public class Formation : BehaviourBase
     {
+        public int team;
+
         public Transform[] containers;
 
-        public UnitLogic[] UnitGroup
+        public UnitEntity[] UnitGroup
         {
             get
             {
@@ -19,18 +21,25 @@ namespace Minegame.Core
             }
         }
 
-        public UnitData Target;
+        public UnitData target;
 
-        private List<UnitLogic> m_listOfUnits;
+        private List<UnitEntity> m_listOfUnits;
 
-        public void Spwan()
+        private void Awake()
+        {
+            m_listOfUnits = new List<UnitEntity>();
+        }
+
+        public void SpwanUnits()
         {
             foreach (var pos in this.containers)
             {
-                var unit = Instantiate(Target.model);
+                var unit = UnitExtension.CreateUnit(this.target);
+                unit.Team = this.team;
                 unit.transform.SetParent(pos);
                 unit.transform.localPosition = Vector3.zero;
                 unit.transform.localEulerAngles = Vector3.zero;
+                m_listOfUnits.Add(unit);
             }
         }
 

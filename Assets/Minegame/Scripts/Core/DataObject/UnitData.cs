@@ -9,12 +9,17 @@ namespace Minegame.Core
     public class UnitData : DataObject
     {
         #region VARIABLES
-        public UnitLogic model;
+        public UnitEntity model;
 
         public UnitAttributes attributes;
         #endregion
 
         #region PROPERTIES
+
+        #endregion
+
+        #region METHODS
+
 
         #endregion
     }

@@ -22,6 +22,24 @@ namespace Minegame.Core
         public float accuracy;
         public float criticalChance;
         public float criticalDamageRate;
+
+        public UnitAttributes Clone()
+        {
+            var clone = new UnitAttributes();
+            clone.name = this.name;
+            clone.health = this.health;
+            clone.mana = this.mana;
+            clone.attack = this.attack;
+            clone.defense = this.defense;
+            clone.magicAttack = this.magicAttack;
+            clone.magicDefense = this.magicDefense;
+            clone.speed = this.speed;
+            clone.evasion = this.evasion;
+            clone.accuracy = this.accuracy;
+            clone.criticalChance = this.criticalChance;
+            clone.criticalDamageRate = this.criticalDamageRate;
+            return clone;
+        }
     }
 
 }

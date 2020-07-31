@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F82EB9A0-3B3D-5289-4054-15B5BD7D9B7C}</ProjectGuid>
+    <ProjectGuid>{56959C6D-4B6C-CFFC-B62B-64DE8056F26C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Minegame.Editor</AssemblyName>
@@ -642,7 +642,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Minegame.Core.csproj">
-      <Project>{2374C327-23C3-A71A-8EB8-3C4857E45465}</Project>
+      <Project>{7125EA57-1BA6-7F02-C19D-EFDEA492F24D}</Project>
       <Name>Minegame.Core</Name>
     </ProjectReference>
   </ItemGroup>

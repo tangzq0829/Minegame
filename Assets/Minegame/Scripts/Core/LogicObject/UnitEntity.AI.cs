@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Minegame.Core
 {
-    public partial class UnitLogic
+    public partial class UnitEntity
     {
 		public void AutomaticAction()
         {

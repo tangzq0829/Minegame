@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minegame.Core", "Minegame.Core.csproj", "{7125EA57-1BA6-7F02-C19D-EFDEA492F24D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minegame.Editor", "Minegame.Editor.csproj", "{56959C6D-4B6C-CFFC-B62B-64DE8056F26C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7125EA57-1BA6-7F02-C19D-EFDEA492F24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7125EA57-1BA6-7F02-C19D-EFDEA492F24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7125EA57-1BA6-7F02-C19D-EFDEA492F24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7125EA57-1BA6-7F02-C19D-EFDEA492F24D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56959C6D-4B6C-CFFC-B62B-64DE8056F26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56959C6D-4B6C-CFFC-B62B-64DE8056F26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56959C6D-4B6C-CFFC-B62B-64DE8056F26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56959C6D-4B6C-CFFC-B62B-64DE8056F26C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
